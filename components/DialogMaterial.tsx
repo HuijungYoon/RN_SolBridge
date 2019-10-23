@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import {Button, Paragraph, Dialog, Portal, Provider} from 'react-native-paper';
-import {View, StyleSheet} from 'react-native';
+import {View, StyleSheet, Text} from 'react-native';
 import {types} from '@babel/core';
+import TabViewMaterial from './TabViewMaterial';
 function DialogMaterial() {
   const [dialogVisible, setDialogVisible] = useState(false);
 
@@ -11,17 +12,18 @@ function DialogMaterial() {
   const _hideDialog = () => {
     setDialogVisible(false);
   };
-  const title: string = '2019 Fall Season Shuttle Bus Schedules';
+  const title: string = '2019 Fall Shuttle Bus Time';
 
   return (
     <>
       <Provider>
-        <Button onPress={_showDialog}>Show Dialog</Button>
+        <Button onPress={_showDialog}>See All Bus Schedules</Button>
         <Portal>
           <Dialog visible={dialogVisible} onDismiss={_hideDialog}>
             <Dialog.Title>{title}</Dialog.Title>
             <Dialog.Content>
-              <Paragraph>This is simple dialog</Paragraph>
+              <TabViewMaterial />
+              <Text>왜안나와</Text>
             </Dialog.Content>
             <Dialog.Actions>
               <Button onPress={_hideDialog}>OK</Button>

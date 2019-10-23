@@ -13,7 +13,8 @@ import {
   Picker,
 } from 'react-native';
 import DialogMaterial from './DialogMaterial';
-
+import TabViewMaterial from './TabViewMaterial';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const NoticeRoute = () => <Text>Notice</Text>;
 
 const FacultyRoute = () => <Text>Faculty</Text>;
@@ -22,15 +23,7 @@ const IntroCourseRoute = () => <Text>아무거나적어보자</Text>;
 
 const BusTimeRoute = () => (
   <>
-    <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}>
-      <Text>Next Bus : {test} </Text>
-    </View>
-    <DialogMaterial />
+    <TabViewMaterial />
   </>
 );
 const test = '10:45';
@@ -56,11 +49,11 @@ const theme = {
 };
 export default class BottomNav extends React.Component {
   state = {
-    index: 0,
+    index: 3,
     routes: [
       {key: 'Notice', title: 'Notice', icon: 'star'},
-      {key: 'Faculty', title: 'Faculty', icon: 'camera'},
-      {key: 'IntroCourse', title: 'IntroCourse', icon: 'history'},
+      {key: 'Faculty', title: 'Faculty', icon: 'person'},
+      {key: 'IntroCourse', title: 'IntroCourse', icon: 'book'},
       {key: 'BusTime', title: 'BusTime', icon: 'history'},
     ],
   };
