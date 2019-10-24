@@ -14,10 +14,14 @@ import {
 } from 'react-native';
 import DialogMaterial from './DialogMaterial';
 import TabViewMaterial from './TabViewMaterial';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import TableViewFaculty from './TableViewFaculty';
 const NoticeRoute = () => <Text>Notice</Text>;
 
-const FacultyRoute = () => <Text>Faculty</Text>;
+const FacultyRoute = () => (
+  <>
+    <TableViewFaculty />
+  </>
+);
 
 const IntroCourseRoute = () => <Text>아무거나적어보자</Text>;
 
