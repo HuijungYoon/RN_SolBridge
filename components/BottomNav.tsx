@@ -12,7 +12,6 @@ import {
   Button,
   Picker,
 } from 'react-native';
-import DialogMaterial from './DialogMaterial';
 import TabViewMaterial from './TabViewMaterial';
 import TableViewFaculty from './TableViewFaculty';
 const NoticeRoute = () => <Text>Notice</Text>;

@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
-import {View, Dimensions, StyleSheet} from 'react-native';
+import {View, Dimensions, StyleSheet, Text} from 'react-native';
 import SearchBarFaculty from './SearchBarFaculty';
 
 const FirstRoute = () => (
   <View style={[styles.scene, {backgroundColor: '#ecf0f1'}]}>
-    <SearchBarFaculty />
+    <Text>nothing</Text>
   </View>
 );
 

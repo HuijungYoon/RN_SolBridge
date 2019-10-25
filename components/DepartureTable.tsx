@@ -196,7 +196,7 @@ function DepartureTable() {
                 ? styles.chooseBusTimeFromCurrentTime
                 : styles.basic,
             ]}>
-            <DataTable.Cell>12:30 PM</DataTable.Cell>
+            <DataTable.Cell>12:30 PMdddd</DataTable.Cell>
             <DataTable.Cell>
               <Icon name="bus" />
               <Icon name="bus" />
