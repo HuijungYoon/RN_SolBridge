@@ -105,7 +105,7 @@ const chooseBustimeFromNow = () => {
     }
   }
 };
-console.log(chooseBustimeFromNow());
+//console.log(chooseBustimeFromNow());
 
 function ArriveTable() {
   return (

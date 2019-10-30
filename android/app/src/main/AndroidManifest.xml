@@ -1,15 +1,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.rn_one">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.rn_one">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"
-      android:icon="@mipmap/ic_launcher"
-      android:roundIcon="@mipmap/ic_launcher_round"
+      android:icon="@mipmap/ic_roundlogo"
+        android:debuggable="false"
+      android:roundIcon="@mipmap/ic_roundlogo"
       android:allowBackup="true"
-      android:theme="@style/AppTheme">
+      android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
 
         <activity
             android:name=".SplashActivity"

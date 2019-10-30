@@ -52,7 +52,7 @@ const theme = {
 };
 export default class BottomNav extends React.Component {
   state = {
-    index: 3,
+    index: 0,
     routes: [
       {key: 'Notice', title: 'Notice', icon: 'star'},
       {key: 'Faculty', title: 'Faculty', icon: 'person'},

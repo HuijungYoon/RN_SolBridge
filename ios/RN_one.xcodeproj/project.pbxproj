@@ -68,7 +68,7 @@
 		1258663E9B6E4459BE8A0D2F /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* RN_one.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RN_one.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RN_one/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RN_one/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RN_one/AppDelegate.m; sourceTree = SOURCE_ROOT; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RN_one/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RN_one/Info.plist; sourceTree = "<group>"; };
@@ -362,7 +362,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RN_ones" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RN_one" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -752,6 +752,30 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = LY3R7629R4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNVectorIcons\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = RN_one/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -759,7 +783,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.mark.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN_one;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -772,14 +796,38 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LY3R7629R4;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/DoubleConversion\"",
+					"\"${PODS_ROOT}/Headers/Public/FBLazyVector\"",
+					"\"${PODS_ROOT}/Headers/Public/FBReactNativeSpec\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTRequired\"",
+					"\"${PODS_ROOT}/Headers/Public/RCTTypeSafety\"",
+					"\"${PODS_ROOT}/Headers/Public/RNGestureHandler\"",
+					"\"${PODS_ROOT}/Headers/Public/RNReanimated\"",
+					"\"${PODS_ROOT}/Headers/Public/RNVectorIcons\"",
+					"\"${PODS_ROOT}/Headers/Public/React-Core\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTBlob\"",
+					"\"${PODS_ROOT}/Headers/Public/React-RCTText\"",
+					"\"${PODS_ROOT}/Headers/Public/React-cxxreact\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsi\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsiexecutor\"",
+					"\"${PODS_ROOT}/Headers/Public/React-jsinspector\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactCommon\"",
+					"\"${PODS_ROOT}/Headers/Public/Yoga\"",
+					"\"${PODS_ROOT}/Headers/Public/glog\"",
+					"\"$(PODS_ROOT)/Headers/Private/React-Core\"",
+					"$(SRCROOT)/../node_modules/react-native-splash-screen/ios",
+				);
 				INFOPLIST_FILE = RN_one/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(SRCROOT)/../node_modules/react-native-splash-screen/ios";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.mark.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RN_one;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1033,7 +1081,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RN_ones" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RN_one" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

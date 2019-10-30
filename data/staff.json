@@ -1,0 +1,18 @@
+{
+  "memberData": {
+    "name": [
+      "Leo Kim",
+      "Sam Cosgrove",
+      "Kimberly Limanto",
+      "Yunji Choi",
+      "Samia Rifaoui",
+      "Gleb Gadelshin"
+    ],
+    "Leo Kim": {
+      "name": "Leo Kim",
+      "role": "Academic Affairs Manager",
+      "E-Mail": "leokim@solbridge.ac.kr",
+      "image": "https://www.solbridge.ac.kr//site/main/image/staff/Leo Kim.jpg"
+    }
+  }
+}

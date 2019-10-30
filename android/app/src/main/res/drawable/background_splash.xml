@@ -6,7 +6,7 @@
 
     <item android:width="200dp"
           android:height="200dp"
-        android:drawable="@mipmap/ic_solbridgelogo"
+        android:drawable="@mipmap/ic_logo"
         android:gravity="center"/>
 
 </layer-list>

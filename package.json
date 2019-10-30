@@ -12,6 +12,7 @@
   "dependencies": {
     "core-decorators": "^0.20.0",
     "crypto": "^1.0.1",
+    "graphql-yoga": "^1.18.3",
     "react": "16.9.0",
     "react-native": "0.61.2",
     "react-native-bootsplash": "^1.0.3",
