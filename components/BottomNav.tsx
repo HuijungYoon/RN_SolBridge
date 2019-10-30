@@ -12,7 +12,6 @@ import {
   Button,
   Picker,
 } from 'react-native';
-import DialogMaterial from './DialogMaterial';
 import TabViewMaterial from './TabViewMaterial';
 import TableViewFaculty from './TableViewFaculty';
 const NoticeRoute = () => <Text>Notice</Text>;
@@ -53,7 +52,7 @@ const theme = {
 };
 export default class BottomNav extends React.Component {
   state = {
-    index: 3,
+    index: 0,
     routes: [
       {key: 'Notice', title: 'Notice', icon: 'star'},
       {key: 'Faculty', title: 'Faculty', icon: 'person'},

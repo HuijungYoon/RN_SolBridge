@@ -6,7 +6,7 @@
  * @flow
  */
 
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Component} from 'react';
 import {
   SafeAreaView,
@@ -28,8 +28,13 @@ import AppBar from './components/AppBar';
 import BottomNav from './components/BottomNav';
 import ModalMaterial from './components/DialogMaterial';
 
+import SplashScreen from 'react-native-splash-screen';
+
 const App: () => React$Node = () => {
-  const [count, setCount] = useState(3);
+  useEffect(() => {
+    SplashScreen.hide();
+  });
+
   return (
     <>
       <AppBar />
