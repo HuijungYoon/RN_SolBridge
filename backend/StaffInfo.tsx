@@ -1,74 +1,73 @@
 import React from 'react';
-import {View, Dimensions, StyleSheet, Text} from 'react-native';
+import {
+  View,
+  Dimensions,
+  StyleSheet,
+  Text,
+  Button,
+  FlatList,
+} from 'react-native';
 import {DataTable, Avatar} from 'react-native-paper';
-import {labeledStatement} from '@babel/types';
+import SQLite from 'react-native-sqlite-storage';
+//const staffUrl = `https://www.solbridge.ac.kr/story/page/index.jsp?code=solbridge_n020201`;
+// async function loadGraphicCards(url) {
+//   const cheerio = require('react-native-cheerio');
+//   let staffImageBaseUrlArr: string[] = new Array();
+//   const response = await fetch(url); // fetch page
+//   const htmlString = await response.text(); // get response text
+//   const imageBaseUrl = 'https://www.solbridge.ac.kr/';
 
-async function loadGraphicCards() {
-  const cheerio = require('react-native-cheerio');
-  let staffImageBaseUrlArr: string[] = new Array();
-  const searchUrl = `https://www.solbridge.ac.kr/story/page/index.jsp?code=solbridge_n020201`;
-  const response = await fetch(searchUrl); // fetch page
-  const htmlString = await response.text(); // get response text
-  const imageBaseUrl = 'https://www.solbridge.ac.kr/';
+//   let $ = cheerio.load(htmlString);
+//   $('.faculty-research').each(function(item) {
+//     // let name: string[] = $(this)
+//     //   .find('.row')
+//     //   .find('.profile')
+//     //   .text()
+//     //   .trim();
 
-  let $ = cheerio.load(htmlString);
-  $('.faculty-research').each(function(item) {
-    let name: string[] = $(this)
-      .find('.row')
-      .find('.profile')
-      .text()
-      .trim();
+//     let name: string[] = $(this)
+//       .find('.row')
+//       .find('.col-sm-8')
+//       .children('h2')
+//       .text()
+//       .trim();
 
-    for (let i = 0; i < 6; i++) {
-      const image: [] = $('.col-sm-4')
-        .find('img')
-        .eq(i)
-        .attr('src');
+//     let role: string[] = $(this)
+//       .find('row')
+//       .find('.col-sm-8')
+//       .children('p')
+//       .text()
+//       .trim();
 
-      const completeUrl = imageBaseUrl + image;
-      staffImageBaseUrlArr.push(completeUrl);
-    }
+//     for (let i = 0; i < 6; i++) {
+//       const image: [] = $('.col-sm-4')
+//         .find('img')
+//         .eq(i)
+//         .attr('src');
 
-    console.log(name);
-    console.log(staffImageBaseUrlArr);
-  });
+//       const completeUrl = imageBaseUrl + image;
+//       staffImageBaseUrlArr.push(completeUrl);
+//     }
+
+//     // console.log(htmlString);
+//     console.log(name);
+//     // console.log(staffImageBaseUrlArr);
+//   });
+// }
+
+//loadGraphicCards(staffUrl);
+
+interface State {
+  db: SQLite.SQLiteDatabase;
+  //users: Array<IUser>;
 }
 
 function Server() {
-  console.log('여기서부터');
-  let a = loadGraphicCards().then;
-  console.log(a);
-  //loadGraphicCards();
+  //console.log('여기서부터');
+
   return (
     <>
-      <DataTable>
-        <DataTable.Header>
-          <DataTable.Title>name</DataTable.Title>
-          <DataTable.Title>role</DataTable.Title>
-          <DataTable.Title numeric>more</DataTable.Title>
-        </DataTable.Header>
-
-        <DataTable.Row>
-          <DataTable.Cell>1</DataTable.Cell>
-          <DataTable.Cell>2</DataTable.Cell>
-          <DataTable.Cell numeric>3</DataTable.Cell>
-        </DataTable.Row>
-
-        <DataTable.Row>
-          <DataTable.Cell>왜안되냐 </DataTable.Cell>
-          <DataTable.Cell numeric>237</DataTable.Cell>
-          <DataTable.Cell numeric>8.0</DataTable.Cell>
-        </DataTable.Row>
-
-        <DataTable.Pagination
-          page={1}
-          numberOfPages={3}
-          onPageChange={page => {
-            console.log(page);
-          }}
-          label="1-2 of 6"
-        />
-      </DataTable>
+      <Text>hello</Text>
     </>
   );
 }
