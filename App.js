@@ -37,6 +37,7 @@ const App: () => React$Node = () => {
 
   return (
     <>
+      <StatusBar backgroundColor={'#0984e3'} />
       <AppBar />
       <BottomNav />
     </>

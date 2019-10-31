@@ -36,6 +36,8 @@ target 'RN_one' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
+  pod 'react-native-sqlite-storage', :path => '../node_modules/react-native-sqlite-storage'
+
   target 'RN_oneTests' do
     inherit! :search_paths
     # Pods for testing

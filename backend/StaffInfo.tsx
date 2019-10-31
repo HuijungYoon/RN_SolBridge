@@ -1,76 +1,104 @@
-import React from 'react';
-import {View, Dimensions, StyleSheet, Text} from 'react-native';
+import React, {useState} from 'react';
+import {
+  View,
+  Dimensions,
+  StyleSheet,
+  Text,
+  Button,
+  Image,
+  FlatList,
+  ScrollView,
+} from 'react-native';
 import {DataTable, Avatar} from 'react-native-paper';
-import {labeledStatement} from '@babel/types';
+import SQLite from 'react-native-sqlite-storage';
+import staffData from '../data/staff.json';
+import {ListItem, SearchBar} from 'react-native-elements';
 
-async function loadGraphicCards() {
-  const cheerio = require('react-native-cheerio');
-  let staffImageBaseUrlArr: string[] = new Array();
-  const searchUrl = `https://www.solbridge.ac.kr/story/page/index.jsp?code=solbridge_n020201`;
-  const response = await fetch(searchUrl); // fetch page
-  const htmlString = await response.text(); // get response text
-  const imageBaseUrl = 'https://www.solbridge.ac.kr/';
+// const staffUrl = `https://www.solbridge.ac.kr/story/page/index.jsp?code=solbridge_n020201`;
+// async function loadGraphicCards(url) {
+//   const cheerio = require('react-native-cheerio');
+//   let staffImageBaseUrlArr: string[] = new Array();
+//   const response = await fetch(url); // fetch page
+//   const htmlString = await response.text(); // get response text
+//   const imageBaseUrl = 'https://www.solbridge.ac.kr/';
 
-  let $ = cheerio.load(htmlString);
-  $('.faculty-research').each(function(item) {
-    let name: string[] = $(this)
-      .find('.row')
-      .find('.profile')
-      .text()
-      .trim();
+//   let $ = cheerio.load(htmlString);
+//   $('.faculty-research').each(function(item) {
+//     // let name: string[] = $(this)
+//     //   .find('.row')
+//     //   .find('.profile')
+//     //   .text()
+//     //   .trim();
 
-    for (let i = 0; i < 6; i++) {
-      const image: [] = $('.col-sm-4')
-        .find('img')
-        .eq(i)
-        .attr('src');
+//     let name: string[] = $(this)
+//       .find('.row')
+//       .find('.col-sm-8')
+//       .children('h2')
+//       .text()
+//       .trim();
 
-      const completeUrl = imageBaseUrl + image;
-      staffImageBaseUrlArr.push(completeUrl);
-    }
+//     let role: string[] = $(this)
+//       .find('row')
+//       .find('.col-sm-8')
+//       .children('p')
+//       .text()
+//       .trim();
 
-    console.log(name);
-    console.log(staffImageBaseUrlArr);
-  });
-}
+//     for (let i = 0; i < 6; i++) {
+//       const image: [] = $('.col-sm-4')
+//         .find('img')
+//         .eq(i)
+//         .attr('src');
 
-function Server() {
-  console.log('여기서부터');
-  let a = loadGraphicCards().then;
-  console.log(a);
-  //loadGraphicCards();
+//       const completeUrl = imageBaseUrl + image;
+//       staffImageBaseUrlArr.push(completeUrl);
+//     }
+
+//     // console.log(htmlString);
+//     console.log(name);
+//     // console.log(staffImageBaseUrlArr);
+//   });
+// }
+
+// loadGraphicCards(staffUrl);
+
+// interface State {
+//   db: SQLite.SQLiteDatabase;
+//   //users: Array<IUser>;
+// }
+
+function StaffInfo() {
+  // console.log(JSON.stringify(staffData.memberData.staff[0].image));
+  //console.log(staffData.memberData.staff[0].image);
+  const [search, setSearch] = useState('');
+  const staffImage = staffData.memberData.staff.map((staff, i) => (
+    <ListItem
+      key={i}
+      leftAvatar={{source: {uri: staff.image}}}
+      title={staff.name}
+      subtitle={staff.role}
+      bottomDivider
+      chevron
+    />
+  ));
+  const update = e => {
+    //  e.preventDefault();
+
+    //console.log(e.target);
+    setSearch(e);
+  };
+
   return (
     <>
-      <DataTable>
-        <DataTable.Header>
-          <DataTable.Title>name</DataTable.Title>
-          <DataTable.Title>role</DataTable.Title>
-          <DataTable.Title numeric>more</DataTable.Title>
-        </DataTable.Header>
-
-        <DataTable.Row>
-          <DataTable.Cell>1</DataTable.Cell>
-          <DataTable.Cell>2</DataTable.Cell>
-          <DataTable.Cell numeric>3</DataTable.Cell>
-        </DataTable.Row>
-
-        <DataTable.Row>
-          <DataTable.Cell>왜안되냐 </DataTable.Cell>
-          <DataTable.Cell numeric>237</DataTable.Cell>
-          <DataTable.Cell numeric>8.0</DataTable.Cell>
-        </DataTable.Row>
-
-        <DataTable.Pagination
-          page={1}
-          numberOfPages={3}
-          onPageChange={page => {
-            console.log(page);
-          }}
-          label="1-2 of 6"
-        />
-      </DataTable>
+      <SearchBar
+        placeholder="searchd"
+        round={true}
+        lightTheme
+        onChangeText={update}
+        value={search}></SearchBar>
+      <ScrollView>{staffImage}</ScrollView>
     </>
   );
 }
 
-export default Server;
+export default StaffInfo;
