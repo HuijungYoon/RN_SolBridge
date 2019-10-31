@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 import TabViewMaterial from './TabViewMaterial';
 import TableViewFaculty from './TableViewFaculty';
+import TableIntroCourse from './TableIntroCourse';
 const NoticeRoute = () => <Text>Notice</Text>;
 
 const FacultyRoute = () => (
@@ -22,7 +23,11 @@ const FacultyRoute = () => (
   </>
 );
 
-const IntroCourseRoute = () => <Text>아무거나적어보자</Text>;
+const IntroCourseRoute = () => (
+  <>
+    <TableIntroCourse />
+  </>
+);
 
 const BusTimeRoute = () => (
   <>

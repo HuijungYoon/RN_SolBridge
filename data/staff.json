@@ -1,18 +1,169 @@
 {
   "memberData": {
-    "name": [
-      "Leo Kim",
-      "Sam Cosgrove",
-      "Kimberly Limanto",
-      "Yunji Choi",
-      "Samia Rifaoui",
-      "Gleb Gadelshin"
-    ],
-    "Leo Kim": {
-      "name": "Leo Kim",
-      "role": "Academic Affairs Manager",
-      "E-Mail": "leokim@solbridge.ac.kr",
-      "image": "https://www.solbridge.ac.kr//site/main/image/staff/Leo Kim.jpg"
-    }
+    "staff": [
+      {
+        "name": "Leo Kim",
+        "role": "Academic Affairs Manager",
+        "E-Mail": "leokim@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Leo Kim.jpg"
+      },
+      {
+        "name": "Sam Cosgrove",
+        "role": "Academic Advisor",
+        "E-Mail": "samcosgrove@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr///site/main/image/staff/Sam_Cosgrove.jpg"
+      },
+      {
+        "name": "Kimberly Limanto",
+        "role": "Assistant Manager",
+        "E-Mail": "kimberly@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kimberly Limanto.jpg",
+        "Phone": "+82.42.630.8835"
+      },
+      {
+        "name": "Yunji Choi",
+        "role": "Assistant Manager",
+        "E-Mail": "ychoi@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Yunji Choi.jpg",
+        "Phone": "+82.42.630.8845"
+      },
+      {
+        "name": "Samia Rifaoui",
+        "role": "Assistant Manager",
+        "E-Mail": "facultysupportservice@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Samia Rifaoui.jpg",
+        "Phone": "+82.42.630.8509"
+      },
+      {
+        "name": "Gleb Gadelshin",
+        "role": "Assistant Manager",
+        "E-Mail": "studyabroad@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Gleb Gadelshin.jpg",
+        "Phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Charlie Kim",
+        "role": "Student Services Manager",
+        "E-Mail": "kimchangki@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Charlie Kim.jpg",
+        "Phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Son Vu (Lucas)",
+        "role": "Assistant Manager",
+        "E-Mail": "solfinance@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Son Vu.jpg",
+        "Phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Violetta Trach",
+        "role": "Assistant Manager",
+        "E-Mail": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Violetta Trach.jpg",
+        "Phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Alyona Li",
+        "role": "Assistant Manager",
+        "E-Mail": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Alyona Li.jpg",
+        "Phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Iskandar Yuldashev",
+        "role": "Associate Director",
+        "E-Mail": "iskandar@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Iskandar Yuldashev.jpg",
+        "Phone": "+82.42.630.8833"
+      },
+      {
+        "name": "Romain Bartolo",
+        "role": "Senior Regional Manager",
+        "E-Mail": "rbartolo@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Romain Bartolo.jpg",
+        "Phone": "+82.42.630.8825"
+      },
+      {
+        "name": "Daniel Kopperud",
+        "role": "Senior International Admissions Manager",
+        "E-Mail": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Daniel Kopperud.jpg",
+        "Phone": "+82.42.630.8856"
+      },
+      {
+        "name": "Ksenia Kolopenko",
+        "role": "Senior Regional Manager",
+        "E-Mail": "ksenia.kolopenko@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Ksenia Kolopenko.jpg",
+        "Phone": "+82.42.630.8827"
+      },
+      {
+        "name": "Rodrigo Ribeiro Coimbra",
+        "role": "Senior Regional Manager",
+        "E-Mail": "coimbra@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rodrigo Ribeiro Coimbra.jpg",
+        "Phone": "+82.42.630.8780"
+      },
+      {
+        "name": "Lam Le",
+        "role": "Senior Regional Manager",
+        "E-Mail": "lamle@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Lam Le.jpg",
+        "Phone": "+82.42630.8865"
+      },
+      {
+        "name": "Rezia Usman",
+        "role": "Senior Regional Manager",
+        "E-Mail": "rezia.usman@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rezia Usman.jpg",
+        "Phone": "+82.42.630.8885"
+      },
+      {
+        "name": "Rakesh Lazar",
+        "role": "Senior Regional Manager",
+        "E-Mail": "rakesh.lazar@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rakesh Lazar.jpg",
+        "Phone": "+82.42.630.8836"
+      },
+      {
+        "name": "Dr. Kalu Ibe Ekpeghere",
+        "role": "Senior Regional Manager",
+        "E-Mail": "kelvinkalu@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kalu Ibe.jpg",
+        "Phone": "+82.42.630.8515"
+      },
+      {
+        "name": "Haruka Ki",
+        "role": "Regional Manager",
+        "E-Mail": "japan@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Haruka_Ki.jpg"
+      },
+      {
+        "name": "Dongxue Lyu",
+        "role": "Regional Manager",
+        "E-Mail": "dongxue.lyu@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Dongxue Lyu.jpg"
+      },
+      {
+        "name": "Sharon Nabwire",
+        "role": "Digital Marketing Manager",
+        "E-Mail": "snabwire@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Sharon Nabwire.jpg",
+        "Phone": "+82.42.630.8506"
+      },
+      {
+        "name": "Aigerim Kenshilik",
+        "role": "International Relations Assistant",
+        "E-Mail": "akenshilik@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Aigerim Kenshilik.jpg",
+        "Phone": "+82.42.630.8831"
+      },
+      {
+        "name": "Angelina Vorozhbit",
+        "role": "International Relations Assistant",
+        "E-Mail": "avorozhbit@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Angelina Vorozhbit.jpg"
+      }
+    ]
   }
 }
