@@ -91,11 +91,11 @@ function StaffInfo() {
   return (
     <>
       <SearchBar
-        placeholder="search"
-        // onChangeText={() => setSearch('')}
+        placeholder="searchd"
+        round={true}
+        lightTheme
         onChangeText={update}
-        value={search}
-      />
+        value={search}></SearchBar>
       <ScrollView>{staffImage}</ScrollView>
     </>
   );
