@@ -15,6 +15,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
 import {
@@ -30,56 +31,117 @@ import ModalMaterial from './components/DialogMaterial';
 
 import SplashScreen from 'react-native-splash-screen';
 
-const App: () => React$Node = () => {
-  useEffect(() => {
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+
+class LogoTitle extends React.Component {
+  render() {
+    return (
+      <>
+        <Text
+          style={{flex: 1, fontSize: 25, fontWeight: 'bold', color: '#ffffff'}}>
+          SOLBRIDGE
+        </Text>
+      </>
+    );
+  }
+}
+
+class HomeScreen extends React.Component {
+  // useEffect(() => {
+  //   SplashScreen.hide();
+  // });
+  static navigationOptions = ({navigation}) => {
+    return {
+      headerTitle: () => <LogoTitle />,
+    };
+  };
+  componentDidMount() {
     SplashScreen.hide();
-  });
+  }
 
-  return (
-    <>
-      <AppBar />
-      <BottomNav />
-    </>
-  );
-};
+  render() {
+    return (
+      <>
+        <StatusBar backgroundColor="#0984e3" />
+        <BottomNav />
+      </>
+    );
+  }
+}
+export class DetailsScreen extends React.Component {
+  static navigationOptions = ({navigation, navigationOptions}) => {
+    const {params} = navigation.state;
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+    return {
+      title: params ? params.otherParam : 'A Nested Details Screen',
+      /* These values are used instead of the shared configuration! */
+      headerStyle: {
+        backgroundColor: navigationOptions.headerTintColor,
+      },
+      headerTintColor: navigationOptions.headerStyle.backgroundColor,
+    };
+  };
 
-export default App;
+  render() {
+    /* 2. Read the params from the navigation state */
+    const {params} = this.props.navigation.state;
+    const itemId = params ? params.itemId : null;
+    const otherParam = params ? params.otherParam : null;
+
+    return (
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <Text>Details Screen</Text>
+
+        <Button
+          title="Update the title"
+          onPress={() =>
+            this.props.navigation.setParams({otherParam: 'Updated!'})
+          }
+        />
+        <Button
+          title="Go to Details... again"
+          onPress={() => this.props.navigation.navigate('Details')}
+        />
+        <Button
+          title="Go back"
+          onPress={() => this.props.navigation.goBack()}
+        />
+      </View>
+    );
+  }
+}
+
+const RootStack = createStackNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+    },
+    Details: {
+      screen: DetailsScreen,
+    },
+  },
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#0984e3',
+        fontWeight: 'bold',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
+  },
+);
+
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}
+
+//export default App;
