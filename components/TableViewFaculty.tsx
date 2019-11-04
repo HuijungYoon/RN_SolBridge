@@ -4,13 +4,13 @@ import {View, Dimensions, StyleSheet, Text} from 'react-native';
 import StaffInfo from '../backend/StaffInfo';
 
 const FirstRoute = () => (
-  <View style={[styles.scene, {backgroundColor: '#ecf0f1'}]}>
-    <StaffInfo />
-  </View>
+  <View style={[styles.scene, {backgroundColor: '#ecf0f1'}]}></View>
 );
 
 const SecondRoute = () => (
-  <View style={[styles.scene, {backgroundColor: '#ecf0f1'}]}></View>
+  <View style={[styles.scene, {backgroundColor: '#ecf0f1'}]}>
+    <StaffInfo />
+  </View>
 );
 
 const TabViewMaterial = () => {

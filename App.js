@@ -60,14 +60,14 @@ class HomeScreen extends React.Component {
   // useEffect(() => {
   //   SplashScreen.hide();
   // });
+  componentDidMount() {
+    SplashScreen.hide();
+  }
   static navigationOptions = ({navigation}) => {
     return {
       headerTitle: () => <LogoTitle />,
     };
   };
-  componentDidMount() {
-    SplashScreen.hide();
-  }
 
   render() {
     return (
@@ -126,14 +126,21 @@ const RootStack = createStackNavigator(
   {
     Main: {
       screen: MainStack,
+      //헤더 없애기
+      navigationOptions: ({navigation}) => ({header: null}),
     },
     MyModal: {
       screen: ModalScreen,
+      headerShown: true,
+      navigationOptions: {
+        title: 'StaffInfo',
+        headerBackTitle: null,
+      },
     },
   },
   {
     mode: 'modal',
-    headerMode: 'none',
+    //headerMode: 'none',
   },
 );
 const AppContainer = createAppContainer(RootStack);

@@ -1,0 +1,187 @@
+{
+  "memberData": {
+    "staff": [
+      {
+        "name": "John E. Endicott",
+        "role": "President and Vice Chancellor,",
+
+        "email": "leokim@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Leo Kim.jpg"
+      },
+      {
+        "name": "Sam Cosgrove",
+        "role": "Academic Advisor",
+        "email": "samcosgrove@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr///site/main/image/staff/Sam_Cosgrove.jpg"
+      },
+      {
+        "name": "Kimberly Limanto",
+        "role": "Assistant Manager",
+        "task": "Status Application, Graduation, Grade",
+        "email": "kimberly@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kimberly Limanto.jpg",
+        "phone": "+82.42.630.8835"
+      },
+      {
+        "name": "Yunji Choi",
+        "role": "Assistant Manager",
+        "task": "Certificate, Office Excuse, Library",
+        "email": "ychoi@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Yunji Choi.jpg",
+        "phone": "+82.42.630.8845"
+      },
+      {
+        "name": "Samia Rifaoui",
+        "role": "Assistant Manager",
+        "task": "Faculty Support",
+        "email": "facultysupportservice@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Samia Rifaoui.jpg",
+        "phone": "+82.42.630.8509"
+      },
+      {
+        "name": "Gleb Gadelshin",
+        "role": "Assistant Manager",
+        "task": "Study Abroad (Outbound & Inbound)",
+        "email": "studyabroad@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Gleb Gadelshin.jpg",
+        "phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Charlie Kim",
+        "role": "Student Services Manager",
+        "email": "kimchangki@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Charlie Kim.jpg",
+        "phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Son Vu (Lucas)",
+        "role": "Assistant Manager",
+        "task": "Tuition fees & Payments, Finance Affairs,Scholarships",
+        "email": "solfinance@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Son Vu.jpg",
+        "phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Violetta Trach",
+        "role": "Assistant Manager",
+        "task": "Insurance, Visa and Student Orientation",
+        "email": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Violetta Trach.jpg",
+        "phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Alyona Li",
+        "role": "Assistant Manager",
+        "task": "Insurance Application,Print cards,Off-Campus Residence Supervision,Student activties",
+        "email": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Alyona Li.jpg",
+        "phone": "+82.42.630.8847"
+      },
+      {
+        "name": "Iskandar Yuldashev",
+        "role": "Associate Director",
+        "task": "Central Asia, Middle East and Caucasus",
+        "email": "iskandar@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Iskandar Yuldashev.jpg",
+        "phone": "+82.42.630.8833"
+      },
+      {
+        "name": "Romain Bartolo",
+        "role": "Senior Regional Manager",
+        "task": "Europe and North America",
+        "email": "rbartolo@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Romain Bartolo.jpg",
+        "phone": "+82.42.630.8825"
+      },
+      {
+        "name": "Daniel Kopperud",
+        "role": "Senior International Admissions Manager",
+        "email": "studentservices@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Daniel Kopperud.jpg",
+        "phone": "+82.42.630.8856"
+      },
+      {
+        "name": "Ksenia Kolopenko",
+        "role": "Senior Regional Manager",
+        "task": "Russia, Ukraine, Belarus & Mongolia",
+        "email": "ksenia.kolopenko@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Ksenia Kolopenko.jpg",
+        "phone": "+82.42.630.8827"
+      },
+      {
+        "name": "Rodrigo Ribeiro Coimbra",
+        "role": "Senior Regional Manager",
+        "task": "Latin America and Portugal",
+        "email": "coimbra@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rodrigo Ribeiro Coimbra.jpg",
+        "phone": "+82.42.630.8780"
+      },
+      {
+        "name": "Lam Le",
+        "role": "Senior Regional Manager",
+        "task": "Vietnam, Philippines, Myanmar, Cambodia and Laos",
+        "email": "lamle@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Lam Le.jpg",
+        "phone": "+82.42630.8865"
+      },
+      {
+        "name": "Rezia Usman",
+        "role": "Senior Regional Manager",
+        "task": "Indonesia, Malaysia, Brunei Darussalam, Thailand, Singapore, Australia, New Zealand",
+        "email": "rezia.usman@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rezia Usman.jpg",
+        "phone": "+82.42.630.8885"
+      },
+      {
+        "name": "Rakesh Lazar",
+        "role": "Senior Regional Manager",
+        "task": "India, Nepal, Bangladesh, Pakistan & Sri Lanka",
+        "email": "rakesh.lazar@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rakesh Lazar.jpg",
+        "phone": "+82.42.630.8836"
+      },
+      {
+        "name": "Dr. Kalu Ibe Ekpeghere",
+        "role": "Senior Regional Manager",
+        "task": "Africa",
+        "email": "kelvinkalu@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kalu Ibe.jpg",
+        "phone": "+82.42.630.8515"
+      },
+      {
+        "name": "Haruka Ki",
+        "role": "Regional Manager",
+        "task": "Japan",
+        "email": "japan@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Haruka_Ki.jpg"
+      },
+      {
+        "name": "Dongxue Lyu",
+        "role": "Regional Manager",
+        "task": "China (including Hong Kong, Macau and Taiwan)",
+        "email": "dongxue.lyu@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Dongxue Lyu.jpg"
+      },
+      {
+        "name": "Sharon Nabwire",
+        "role": "Digital Marketing Manager",
+        "email": "snabwire@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Sharon Nabwire.jpg",
+        "phone": "+82.42.630.8506"
+      },
+      {
+        "name": "Aigerim Kenshilik",
+        "role": "International Relations Assistant",
+        "email": "akenshilik@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Aigerim Kenshilik.jpg",
+        "phone": "+82.42.630.8831"
+      },
+      {
+        "name": "Angelina Vorozhbit",
+        "role": "International Relations Assistant",
+        "email": "avorozhbit@solbridge.ac.kr",
+        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Angelina Vorozhbit.jpg"
+      }
+    ]
+  }
+}
