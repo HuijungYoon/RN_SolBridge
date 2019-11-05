@@ -15,7 +15,8 @@ import {
 import TabViewMaterial from './TabViewMaterial';
 import TableViewFaculty from './TableViewFaculty';
 import TableIntroCourse from './TableIntroCourse';
-const NoticeRoute = () => <Text>Notice</Text>;
+
+const NoticeRoute = () => <Text>hello</Text>;
 
 const FacultyRoute = () => (
   <>

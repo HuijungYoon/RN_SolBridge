@@ -15,6 +15,7 @@ import {
   View,
   Text,
   StatusBar,
+  Button,
 } from 'react-native';
 
 import {
@@ -30,57 +31,130 @@ import ModalMaterial from './components/DialogMaterial';
 
 import SplashScreen from 'react-native-splash-screen';
 
-const App: () => React$Node = () => {
-  useEffect(() => {
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+import {Provider} from 'mobx-react';
+import {ModalScreen} from './backend/StaffInfo';
+import {FacultyModal} from './backend/FacultyInfo';
+//import Store from './mobx/listStore';
+class LogoTitle extends React.Component {
+  render() {
+    return (
+      <>
+        <View style={{alignItems: 'center', justifyContent: 'center'}}>
+          <Text
+            style={{
+              fontSize: 22,
+              fontWeight: 'bold',
+              color: '#ffffff',
+            }}>
+            SOLBRIDGE
+          </Text>
+          <Text style={{color: '#ffffff'}}>InfoSystem</Text>
+        </View>
+      </>
+    );
+  }
+}
+
+class HomeScreen extends React.Component {
+  // useEffect(() => {
+  //   SplashScreen.hide();
+  // });
+  componentDidMount() {
     SplashScreen.hide();
-  });
+  }
+  static navigationOptions = ({navigation}) => {
+    return {
+      headerTitle: () => <LogoTitle />,
+    };
+  };
 
-  return (
-    <>
-      <StatusBar backgroundColor={'#0984e3'} />
-      <AppBar />
-      <BottomNav />
-    </>
-  );
-};
+  render() {
+    return (
+      <>
+        <StatusBar backgroundColor="#0984e3" />
+        <BottomNav />
+      </>
+    );
+  }
+}
+// const RootStack = createStackNavigator(
+//   {
+//     Home: {
+//       screen: HomeScreen,
+//     },
+//     Details: {
+//       screen: DetailsScreen,
+//     },
+//   },
+//   {
+//     initialRouteName: 'Home',
+//     defaultNavigationOptions: {
+//       headerStyle: {
+//         backgroundColor: '#0984e3',
+//         fontWeight: 'bold',
+//       },
+//       headerTintColor: '#fff',
+//       headerTitleStyle: {
+//         fontWeight: 'bold',
+//       },
+//     },
+//   },
+// );
 
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+const MainStack = createStackNavigator(
+  {
+    Home: {
+      screen: HomeScreen,
+    },
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  {
+    initialRouteName: 'Home',
+    defaultNavigationOptions: {
+      headerStyle: {
+        backgroundColor: '#0984e3',
+      },
+      headerTintColor: '#fff',
+      headerTitleStyle: {
+        fontWeight: 'bold',
+      },
+    },
   },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
+);
 
-export default App;
+const RootStack = createStackNavigator(
+  {
+    Main: {
+      screen: MainStack,
+      //헤더 없애기
+      navigationOptions: ({navigation}) => ({header: null}),
+    },
+    MyModal: {
+      screen: ModalScreen,
+      //headerShown: true,
+      navigationOptions: {
+        title: 'Staff',
+        headerBackTitle: null,
+      },
+    },
+    FacultyModal: {
+      screen: FacultyModal,
+      navigationOptions: {
+        title: 'Faculty',
+        headerBackTitle: null,
+      },
+    },
+  },
+  {
+    mode: 'modal',
+    //headerMode: 'none',
+  },
+);
+const AppContainer = createAppContainer(RootStack);
+
+export default class App extends React.Component {
+  render() {
+    return <AppContainer />;
+  }
+}

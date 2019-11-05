@@ -184,6 +184,8 @@ PODS:
   - React-jsinspector (0.61.2)
   - react-native-splash-screen (3.0.6):
     - React
+  - react-native-sqlite-storage (4.1.0):
+    - React
   - React-RCTActionSheet (0.61.2):
     - React-Core/RCTActionSheetHeaders (= 0.61.2)
   - React-RCTAnimation (0.61.2):
@@ -247,6 +249,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
+  - react-native-sqlite-storage (from `../node_modules/react-native-sqlite-storage`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -299,6 +302,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   react-native-splash-screen:
     :path: "../node_modules/react-native-splash-screen"
+  react-native-sqlite-storage:
+    :path: "../node_modules/react-native-sqlite-storage"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -347,6 +352,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: 8909917ff7d8f21a57e443a866fd8d4560e50c65
   React-jsinspector: 111d7d342b07a904c400592e02a2b958f1098b60
   react-native-splash-screen: d712b25c25f6671a15227f9b8579f87b2dbb0340
+  react-native-sqlite-storage: f06bfba10f67f989c00b6a699b9c2b80a816edbe
   React-RCTActionSheet: 89b037c0fb7d2671607cb645760164e7e0c013f6
   React-RCTAnimation: e3cefa93c38c004c318f7ec04b883eb14b8b8235
   React-RCTBlob: d26ac0e313fbf14e7203473fd593ccaaeee8329e
@@ -357,12 +363,12 @@ SPEC CHECKSUMS:
   React-RCTText: e3ef6191cdb627855ff7fe8fa0c1e14094967fb8
   React-RCTVibration: fb54c732fd20405a76598e431aa2f8c2bf527de9
   ReactCommon: 5848032ed2f274fcb40f6b9ec24067787c42d479
-  RNBootSplash: bba8b884b667778b0fd0c34a5f909046ff0f2237
+  RNBootSplash: 161de9d2b5dc2af37c2777063b8e6d844ab2a6ff
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   RNReanimated: 6abbbae2e5e72609d85aabd92a982a94566885f1
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: 14927e37bd25376d216b150ab2a561773d57911f
 
-PODFILE CHECKSUM: 7bb751137638227d918d6286ee9a8cb09cc965a9
+PODFILE CHECKSUM: 9e75c6dbcd2c152f79aa08a7966ca7eacf8268d3
 
 COCOAPODS: 1.7.5
