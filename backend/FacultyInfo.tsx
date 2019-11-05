@@ -1,4 +1,7 @@
 import React, {useState} from 'react';
+import facultyData from '../data/faculty.json';
+import {DataTable, Avatar, Divider} from 'react-native-paper';
+import {ListItem, SearchBar, Icon} from 'react-native-elements';
 import {
   View,
   Dimensions,
@@ -11,40 +14,31 @@ import {
   Linking,
   Platform,
 } from 'react-native';
-import {DataTable, Avatar, Divider} from 'react-native-paper';
-import staffData from '../data/staff.json';
-import {ListItem, SearchBar, Icon} from 'react-native-elements';
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
 import {withNavigation} from 'react-navigation';
-import {url} from 'inspector';
 
-function StaffInfo({navigation}) {
-  // console.log(JSON.stringify(staffData.memberData.staff[0].image));
-  //console.log(staffData.memberData.staff[0].image);
-
+function FacultyInfo({navigation}) {
   const [search, setSearch] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const [info, setInfo] = useState('no');
-
-  const staff = staffData.memberData.staff.map((staff, i) => (
+  const faculty = facultyData.facultyData.faculty.map((faculty, i) => (
     <>
       <ListItem
         key={i}
-        leftAvatar={{source: {uri: staff.image}}}
-        title={staff.name}
-        subtitle={staff.role}
+        leftAvatar={{source: {uri: faculty.image}}}
+        title={faculty.name}
+        subtitle={faculty.role}
         bottomDivider
         chevron
         onPress={() =>
-          navigation.navigate('MyModal', {
-            name: staff.name,
-            role: staff.role,
-            image: staff.image,
-            email: staff.email,
-            phone: staff.phone,
-            task: staff.task,
+          navigation.navigate('FacultyModal', {
+            name: faculty.name,
+            role: faculty.role,
+            image: faculty.image,
+            email: faculty.email,
+            phone: faculty.phone,
+            university: faculty.university,
+            teachArea: faculty.teachArea,
+            room: faculty.room,
           })
         }
       />
@@ -61,7 +55,6 @@ function StaffInfo({navigation}) {
     setIsLoading(false);
     //setSearch(search.searchText :);
   };
-
   return (
     <>
       <SearchBar
@@ -73,12 +66,12 @@ function StaffInfo({navigation}) {
         onClear={() => update}
         onCancel={_cancel}
       />
-      <ScrollView style={styles.scrollView}>{staff}</ScrollView>
+      <ScrollView style={styles.scrollView}>{faculty}</ScrollView>
     </>
   );
 }
 
-export class ModalScreen extends React.Component {
+export class FacultyModal extends React.Component {
   render() {
     const {navigation} = this.props;
     // const image = JSON.stringify(navigation.getParam('image'));
@@ -95,6 +88,12 @@ export class ModalScreen extends React.Component {
       Linking.openURL(phoneNumber);
     };
 
+    const facultyName = navigation.getParam('name');
+    const facultyRole = navigation.getParam('role');
+    const facultyUniversity = navigation.getParam('university');
+    const facultyRoom = navigation.getParam('room');
+    const facultyTeachArea = navigation.getParam('teachArea');
+
     return (
       <>
         <View style={{flex: 5, alignItems: 'center', justifyContent: 'center'}}>
@@ -104,11 +103,12 @@ export class ModalScreen extends React.Component {
               uri: image,
             }}
           />
-          <Text style={{fontSize: 30, marginTop: 10}}>
-            {navigation.getParam('name')}
+          <Text style={{fontSize: 30, marginTop: 10}}>{facultyName}</Text>
+          <Text style={{fontSize: 18, marginTop: 10, textAlign: 'center'}}>
+            {facultyRole}
           </Text>
-          <Text style={{fontSize: 18, marginTop: 10}}>
-            {navigation.getParam('role')}
+          <Text style={{fontSize: 15, marginTop: 10, textAlign: 'center'}}>
+            {facultyUniversity}
           </Text>
         </View>
         <View>
@@ -128,23 +128,34 @@ export class ModalScreen extends React.Component {
               justifyContent: 'center',
             }}>
             <Icon name="checklist" type="octicon" />
-            <Text style={{marginLeft: 5}}>Field</Text>
+            <Text style={{marginLeft: 5}}>TeachArea</Text>
           </View>
           <Text
             style={{
               fontSize: 18,
               fontWeight: '500',
-              marginTop: 20,
+              marginTop: 5,
               textAlign: 'center',
             }}>
             {' '}
-            {navigation.getParam('task')}
+            {facultyTeachArea}
           </Text>
         </View>
         <View>
           <Divider />
         </View>
         <View style={{flex: 1, flexDirection: 'column'}}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'center',
+              marginTop: 5,
+            }}>
+            <Icon name="home" />
+            <Text>{facultyRoom}</Text>
+          </View>
           <View
             style={{
               flex: 1,
@@ -171,7 +182,7 @@ export class ModalScreen extends React.Component {
             <Icon name="mail" />
             <Text> {navigation.getParam('email')}</Text>
             {/* <Icon name="mail" />
-          <Text> {navigation.getParam('email')}</Text> */}
+            <Text> {navigation.getParam('email')}</Text> */}
           </View>
         </View>
         <View style={styles.container}>
@@ -209,5 +220,4 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 });
-
-export default withNavigation(StaffInfo);
+export default withNavigation(FacultyInfo);

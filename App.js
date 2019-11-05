@@ -35,6 +35,7 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import {Provider} from 'mobx-react';
 import {ModalScreen} from './backend/StaffInfo';
+import {FacultyModal} from './backend/FacultyInfo';
 //import Store from './mobx/listStore';
 class LogoTitle extends React.Component {
   render() {
@@ -131,9 +132,16 @@ const RootStack = createStackNavigator(
     },
     MyModal: {
       screen: ModalScreen,
-      headerShown: true,
+      //headerShown: true,
       navigationOptions: {
-        title: 'StaffInfo',
+        title: 'Staff',
+        headerBackTitle: null,
+      },
+    },
+    FacultyModal: {
+      screen: FacultyModal,
+      navigationOptions: {
+        title: 'Faculty',
         headerBackTitle: null,
       },
     },

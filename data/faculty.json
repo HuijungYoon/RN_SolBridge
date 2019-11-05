@@ -1,186 +1,225 @@
 {
-  "memberData": {
-    "staff": [
+  "facultyData": {
+    "faculty": [
       {
         "name": "John E. Endicott",
-        "role": "President and Vice Chancellor,",
-
-        "email": "leokim@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Leo Kim.jpg"
+        "role": "President and Vice Chancellor",
+        "university": "Tufts University, USA (Ph.D)",
+        "teachArea": "American History, East Asian Politics",
+        "email": "endicott@solbridge.ac.kr",
+        "phone": "+82 42-630-8500",
+        "room": "Room 1202",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/John Endicott.jpg"
       },
       {
-        "name": "Sam Cosgrove",
-        "role": "Academic Advisor",
-        "email": "samcosgrove@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr///site/main/image/staff/Sam_Cosgrove.jpg"
+        "name": "Chia-Hsing Huang, Ph.D.",
+        "role": "Senior Academic Advisor",
+        "university": "University of Pennsylvania,USA",
+        "teachArea": "Finance",
+        "email": "koreasing@solbridge.ac.kr",
+        "phone": "+82 42-630-8527",
+        "room": "Room 1208",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Chia-Hsing Huang.jpg"
       },
       {
-        "name": "Kimberly Limanto",
-        "role": "Assistant Manager",
-        "task": "Status Application, Graduation, Grade",
-        "email": "kimberly@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kimberly Limanto.jpg",
-        "phone": "+82.42.630.8835"
+        "name": "Aye Mengistu Alemu",
+        "role": "Associate Professor",
+        "university": "Ritsumeikan Asia Pacific University, Japan (Ph.D.)",
+        "teachArea": "Macroeconomics, Microeconomics, Business Economics, International Economics, Development Economics, Applied Econometrics, Research Methods",
+        "email": " ayem2011@solbridge.ac.kr",
+        "phone": "+82 42-630-8534",
+        "room": "Room 1113",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Aye Mengistu Alemu.jpg"
       },
       {
-        "name": "Yunji Choi",
-        "role": "Assistant Manager",
-        "task": "Certificate, Office Excuse, Library",
-        "email": "ychoi@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Yunji Choi.jpg",
-        "phone": "+82.42.630.8845"
+        "name": "Ben Kwame Agyei-Mensah",
+        "role": "Associate Professor",
+        "university": "SMC-University, Switzerland (DBA)",
+        "teachArea": "Accounting and Finance",
+        "email": " bamensah@solbridge.ac.kr",
+        "phone": "+82 42-630-8538",
+        "room": "Room 1104",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Ben Kwame Agyei-Mensah.jpg"
       },
       {
-        "name": "Samia Rifaoui",
-        "role": "Assistant Manager",
-        "task": "Faculty Support",
-        "email": "facultysupportservice@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Samia Rifaoui.jpg",
-        "phone": "+82.42.630.8509"
+        "name": "BI (Byung-Ik) Jung",
+        "role": "Assistant Professor",
+        "university": "Director of Management Planning Division INSEAD,France (MBA)",
+        "teachArea": "Entrepreneurship, Start-up, Business Consulting, Critical Thinking, Social Innovation",
+        "email": "bijung@solbridge.ac.kr",
+        "phone": "+82 42 630 8516",
+        "room": "Room 503",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Byung-Ik Jung.jpg"
       },
       {
-        "name": "Gleb Gadelshin",
-        "role": "Assistant Manager",
-        "task": "Study Abroad (Outbound & Inbound)",
-        "email": "studyabroad@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Gleb Gadelshin.jpg",
-        "phone": "+82.42.630.8847"
+        "name": "Joshua Park",
+        "role": "Assistant Professor",
+        "university": "Harvard Law School, USA (J.D)",
+        "teachArea": "Business Law, Negotiation, Debate, Speech, Critical Thinking",
+        "email": " joshuapark@solbridge.ac.kr",
+        "phone": "+82 42-630-8532",
+        "room": "Room 1108",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Joshua Park.jpg"
       },
       {
-        "name": "Charlie Kim",
-        "role": "Student Services Manager",
-        "email": "kimchangki@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Charlie Kim.jpg",
-        "phone": "+82.42.630.8847"
+        "name": "Keunwoo Kim",
+        "role": "Assistant Professor",
+        "university": "University of California, USA (Ph.D.)",
+        "teachArea": "Statistical Methods and Applications, Business Analysis with Python & R",
+        "email": "kwkim@solbridge.ac.kr",
+        "phone": "+82 42 630 8545",
+        "room": "Room 1109",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Keunwoo Kim.jpg"
       },
       {
-        "name": "Son Vu (Lucas)",
-        "role": "Assistant Manager",
-        "task": "Tuition fees & Payments, Finance Affairs,Scholarships",
-        "email": "solfinance@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Son Vu.jpg",
-        "phone": "+82.42.630.8847"
+        "name": "Kushal Sharma",
+        "role": "Assistant Professor",
+        "university": "ESSEC Business School, France (Ph.D.)",
+        "teachArea": "Human Resource Management, International Business Management",
+        "email": "kushal@solbridge.ac.kr",
+        "phone": "+82 42 630 8868",
+        "room": "Room ",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Kushal Sharma.jpg"
       },
       {
-        "name": "Violetta Trach",
-        "role": "Assistant Manager",
-        "task": "Insurance, Visa and Student Orientation",
-        "email": "studentservices@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Violetta Trach.jpg",
-        "phone": "+82.42.630.8847"
+        "name": "Kyun-Hwa Kim",
+        "role": "Assistant Professor",
+        "university": "University of Southern California, USA (Ph.D.)",
+        "teachArea": "Economics, Marketing",
+        "email": "khkim@solbridge.ac.kr",
+        "phone": "+82 42-630-8550",
+        "room": "Room 1003",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/KyunHwa-Kim.jpg"
       },
       {
-        "name": "Alyona Li",
-        "role": "Assistant Manager",
-        "task": "Insurance Application,Print cards,Off-Campus Residence Supervision,Student activties",
-        "email": "studentservices@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Alyona Li.jpg",
-        "phone": "+82.42.630.8847"
+        "name": "Mahmood A. Awan",
+        "role": "Associate Professor,MBA Program Director",
+        "university": "Northcentral University, USA (Ph.D.)",
+        "teachArea": "Internet Marketing, Principles of Marketing, Marketing Strategy, Global Marketing, and International Marketing Strategies",
+        "email": "mawan@solbridge.ac.kr",
+        "phone": "+82 42-630-8528",
+        "room": "Room 1112",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Mahmood Awan.jpg"
       },
       {
-        "name": "Iskandar Yuldashev",
-        "role": "Associate Director",
-        "task": "Central Asia, Middle East and Caucasus",
-        "email": "iskandar@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Iskandar Yuldashev.jpg",
-        "phone": "+82.42.630.8833"
+        "name": "Nurmukhammad Yusupov",
+        "role": "Assistant Professor",
+        "university": "Universite de Nantes, France (Ph.D.)",
+        "teachArea": "Corporate Finance, - Financial Derivatives, Entrepreneurial Finance, Business Economics",
+        "email": "nyusupov@solbridge.ac.kr",
+        "phone": "+82 42 630 8535",
+        "room": "Room 1106",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Nurmukhammad Yusupov.jpg"
       },
       {
-        "name": "Romain Bartolo",
-        "role": "Senior Regional Manager",
-        "task": "Europe and North America",
-        "email": "rbartolo@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Romain Bartolo.jpg",
-        "phone": "+82.42.630.8825"
+        "name": "Ravi Kashyap",
+        "role": "Assistant Professor",
+        "university": "City University of Hong Kong, Hong Kong (Ph.D.)",
+        "teachArea": "Financial Management, Financial Derivatives, Corporate Finance",
+        "email": "ravi.kashyap@solbridge.ac.kr",
+        "phone": "+82 42-630-8548",
+        "room": "Room 1008",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Ravi-Kashyap.jpg"
       },
       {
-        "name": "Daniel Kopperud",
-        "role": "Senior International Admissions Manager",
-        "email": "studentservices@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Daniel Kopperud.jpg",
-        "phone": "+82.42.630.8856"
+        "name": "Sang-Woo Shin",
+        "role": "Assistant Professor",
+        "university": "University of Rochester, USA (Ph.D.)",
+        "teachArea": "Marketing Research, Database Marketing, Marketing Analytics, Marketing Management, Brand Management",
+        "email": "Sangwoo.shin@solbridge.ac.kr",
+        "phone": "+82 42-630-8547",
+        "room": "Room 1112",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/SangWoo-Shin.jpg"
       },
       {
-        "name": "Ksenia Kolopenko",
-        "role": "Senior Regional Manager",
-        "task": "Russia, Ukraine, Belarus & Mongolia",
-        "email": "ksenia.kolopenko@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Ksenia Kolopenko.jpg",
-        "phone": "+82.42.630.8827"
+        "name": "Taylan Urkmez",
+        "role": "Assistant Professor",
+        "university": "University of Kassel, Germany (Ph.D.)",
+        "teachArea": "Consumer Behavior, International Marketing",
+        "email": "turkmez@solbridge.ac.kr",
+        "phone": "+82 42-630-8537",
+        "room": "Room 1104 ",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Taylan Urkmez.jpg"
       },
       {
-        "name": "Rodrigo Ribeiro Coimbra",
-        "role": "Senior Regional Manager",
-        "task": "Latin America and Portugal",
-        "email": "coimbra@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rodrigo Ribeiro Coimbra.jpg",
-        "phone": "+82.42.630.8780"
+        "name": "Tom Steinberger",
+        "role": "Assistant Professor",
+        "university": "UC Irvine, USA (Ph.D.)",
+        "teachArea": "Artificial Intelligence, Franchising, Entrepreneurship",
+        "email": "tfs3@solbridge.ac.kr",
+        "phone": "none",
+        "room": "Room 212",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Tom Steinberger.jpg"
       },
       {
-        "name": "Lam Le",
-        "role": "Senior Regional Manager",
-        "task": "Vietnam, Philippines, Myanmar, Cambodia and Laos",
-        "email": "lamle@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Lam Le.jpg",
-        "phone": "+82.42630.8865"
+        "name": "Weon-Dae Kim",
+        "role": "Assistant Professor",
+        "university": "McGill University, Canada (MBA)",
+        "teachArea": "Asian Management",
+        "email": "wdkim@solbridge.ac.kr",
+        "phone": "+82 42-630-8816",
+        "room": "Room 504",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Weon-Dae Kim.jpg"
       },
       {
-        "name": "Rezia Usman",
-        "role": "Senior Regional Manager",
-        "task": "Indonesia, Malaysia, Brunei Darussalam, Thailand, Singapore, Australia, New Zealand",
-        "email": "rezia.usman@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rezia Usman.jpg",
-        "phone": "+82.42.630.8885"
+        "name": "Sook-Min Kim",
+        "role": "Assistant Professor",
+        "university": "Korea University, Korea (Ph.D.)",
+        "teachArea": "Introduction to Accounting, Financial Accounting, Managerial Accounting",
+        "email": "sookminkim@gmail.com",
+        "phone": "+82-42-630-8531",
+        "room": "Room ",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Sook-Min Kim.jpg"
       },
       {
-        "name": "Rakesh Lazar",
-        "role": "Senior Regional Manager",
-        "task": "India, Nepal, Bangladesh, Pakistan & Sri Lanka",
-        "email": "rakesh.lazar@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Rakesh Lazar.jpg",
-        "phone": "+82.42.630.8836"
+        "name": "Xiangcai Meng",
+        "role": "Assistant Professor",
+        "university": "National Graduate Institute for Policy Studies, Japan (Ph.D.)",
+        "teachArea": "Economics (Macroeconomics, Econometrics, Numerical Methods, and Microeconomics) and Special Topics in Finance",
+        "email": "xiangcaimeng@solbridge.ac.kr",
+        "phone": "+82 42-630-8541",
+        "room": "Room 1103",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Xiangcai Meng.jpg"
       },
       {
-        "name": "Dr. Kalu Ibe Ekpeghere",
-        "role": "Senior Regional Manager",
-        "task": "Africa",
-        "email": "kelvinkalu@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Kalu Ibe.jpg",
-        "phone": "+82.42.630.8515"
+        "name": "Edwin Setiawan Sanusi",
+        "role": "Assistant Professor",
+        "university": "Washington State University, USA (Ph.D.)",
+        "teachArea": "Business Ethics, Strategic Management, Organization Theory, Organizational Behavior",
+        "email": "edwin.sanusi@solbridge.ac.kr",
+        "phone": "+82 42 630 8822",
+        "room": "Room 208",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Edwin Setiawan Sanusi.jpg"
       },
       {
-        "name": "Haruka Ki",
-        "role": "Regional Manager",
-        "task": "Japan",
-        "email": "japan@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Haruka_Ki.jpg"
+        "name": "Michael G Carmine",
+        "role": "Assistant Professor,Director of Career Development Center",
+        "university": "University of West Florida, USA (Ph.D.)",
+        "teachArea": "Operations Management, Sales and Marketing",
+        "email": "carmine@solbridge.ac.kr",
+        "phone": "none",
+        "room": "Room 304",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Michael G. Carmine.jpg"
       },
       {
-        "name": "Dongxue Lyu",
-        "role": "Regional Manager",
-        "task": "China (including Hong Kong, Macau and Taiwan)",
-        "email": "dongxue.lyu@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Dongxue Lyu.jpg"
+        "name": "Onur Ozsoy",
+        "role": "Visiting Professor",
+        "university": "State University of New York, USA (Ph.D.)",
+        "teachArea": "Statistics for Business and Economics, Macroeconomics, Microeconomics, Managerial Economics, Industrial Organization/Economics, Health Economics, Benefit and Cost Analysis.",
+        "email": "ozsoyonur@gmail.com",
+        "phone": "+82 42-630-8562",
+        "room": "none",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/onur ozsoy.jpg"
       },
       {
-        "name": "Sharon Nabwire",
-        "role": "Digital Marketing Manager",
-        "email": "snabwire@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Sharon Nabwire.jpg",
-        "phone": "+82.42.630.8506"
-      },
-      {
-        "name": "Aigerim Kenshilik",
-        "role": "International Relations Assistant",
-        "email": "akenshilik@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Aigerim Kenshilik.jpg",
-        "phone": "+82.42.630.8831"
-      },
-      {
-        "name": "Angelina Vorozhbit",
-        "role": "International Relations Assistant",
-        "email": "avorozhbit@solbridge.ac.kr",
-        "image": "https://www.solbridge.ac.kr//site/main/image/staff/Angelina Vorozhbit.jpg"
+        "name": "Young-Kun Cho",
+        "role": "Assistant Professor,Director of Career Development Center",
+        "university": "Sogang University, Korea (BA)",
+        "teachArea": "Asian Case Studies,Asian Case Workshop",
+        "email": "ykcho@solbridge.ac.kr",
+        "phone": "+82-42-630-8814",
+        "room": "Room 504",
+        "image": "https://www.solbridge.ac.kr//site/main/image/faculty/Young-Kun Cho.jpg"
       }
     ]
   }
