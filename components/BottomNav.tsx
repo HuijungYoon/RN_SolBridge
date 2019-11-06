@@ -15,8 +15,8 @@ import {
 import TabViewMaterial from './TabViewMaterial';
 import TableViewFaculty from './TableViewFaculty';
 import TableIntroCourse from './TableIntroCourse';
-
-const NoticeRoute = () => <Text>hello</Text>;
+import NoticeWebView from '../backend/NoticeWebView';
+const NoticeRoute = () => <NoticeWebView />;
 
 const FacultyRoute = () => (
   <>

@@ -57,56 +57,25 @@ class LogoTitle extends React.Component {
   }
 }
 
-class HomeScreen extends React.Component {
-  // useEffect(() => {
-  //   SplashScreen.hide();
-  // });
-  componentDidMount() {
+function HomeScreen() {
+  useEffect(() => {
     SplashScreen.hide();
-  }
-  static navigationOptions = ({navigation}) => {
-    return {
-      headerTitle: () => <LogoTitle />,
-    };
-  };
-
-  render() {
-    return (
-      <>
-        <StatusBar backgroundColor="#0984e3" />
-        <BottomNav />
-      </>
-    );
-  }
+  });
+  return (
+    <>
+      <StatusBar backgroundColor="#0984e3" />
+      <BottomNav />
+    </>
+  );
 }
-// const RootStack = createStackNavigator(
-//   {
-//     Home: {
-//       screen: HomeScreen,
-//     },
-//     Details: {
-//       screen: DetailsScreen,
-//     },
-//   },
-//   {
-//     initialRouteName: 'Home',
-//     defaultNavigationOptions: {
-//       headerStyle: {
-//         backgroundColor: '#0984e3',
-//         fontWeight: 'bold',
-//       },
-//       headerTintColor: '#fff',
-//       headerTitleStyle: {
-//         fontWeight: 'bold',
-//       },
-//     },
-//   },
-// );
 
 const MainStack = createStackNavigator(
   {
     Home: {
       screen: HomeScreen,
+      navigationOptions: {
+        headerTitle: () => <LogoTitle />,
+      },
     },
   },
   {
