@@ -17,7 +17,7 @@
     "mobx": "^5.14.2",
     "mobx-react": "^6.1.4",
     "react": "16.9.0",
-    "react-native": "0.61.2",
+    "react-native": "0.62.3",
     "react-native-bootsplash": "^1.0.3",
     "react-native-cheerio": "^1.0.0-rc.4",
     "react-native-crypto": "^2.2.0",
